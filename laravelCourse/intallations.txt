@@ -1,0 +1,12 @@
+1. composer create-project --prefer-dist laravel/laravel blog "6.*" (for create new project)
+2. php artisan make:controller folderName/FirstController  (for create new controller)2. php artisan make:controller folderName/FirstController  (for create new controller)
+
+2.2. php artisan make:controller FirstController --resource  (for create new resource controller"CRUD")
+
+3. php artisan route:list  (show all routes and how to access it)
+
+4. composer require laravel/ui "^1.2"
+
+5. php artisan ui vue --auth   (for creting routes, login, register methods in controllers and default view in the project)
+
+6. npm install && npm run dev
