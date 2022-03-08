@@ -1,1 +1,0 @@
-<p>this is a comment about product with id: {{$id}} </p>

@@ -13,9 +13,17 @@ return [
     |
     */
 
-    'previous' => 'السابق',
+    'previous' => '&laquo; Previous',
     'next' => 'التالي',
-    'hello' => 'ملرحبا',
-    'how are you' => 'كيف الحال'
+    'hello' => 'مرحبا',
+    'how are you' => 'كيف الحال',
+   'toooooo much details'=>'طول الكلمة كبير',
+    'details is required'=>'التفاصيل مطلوبة',
+    'toooooo much details'=>'التفصيل طويلة',
+    'price should be numeric'=>'يجب ان يكون ا رقم',
+    'price is required'=>'السعر مطلوبة',
+    'offer name is required'=>'اسم العرض مطلوب',
+    'this offer name had been token'=>'اسم العرض مستخدم',
+    'too long offer name'=>'اسم العرض ويا',
 
 ];

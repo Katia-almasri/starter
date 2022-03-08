@@ -16,11 +16,11 @@ class customerController extends Controller
     }
 
     public function getAboutUs(){
-    	return view('Products.aboutUs');
+    	return view('Body.aboutUs');
     }
     //passing data with one value and with 'with'
     public function getComment(){
-    	return view('Products.comment')->with('id', 2);
+    	return view('Body.comment')->with('id', 2);
     }
    //passing data with array value and with 'with'
     public function getDetail(){
@@ -34,7 +34,7 @@ class customerController extends Controller
     	$data['name'] = 'Apple';
     	$data['foundation'] = 1200;
 
-    	return view('Products.company', $data);
+    	return view('Body.company', $data);
     }
 
     //passing objects
@@ -43,7 +43,7 @@ class customerController extends Controller
     	$customer->id = 100;
     	$customer->name = 'steve';
 
-    	return view('Products.profile', compact('customer'));
+    	return view('Body.profile', compact('customer'));
 
 
     }

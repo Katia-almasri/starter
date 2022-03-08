@@ -48,3 +48,17 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Front'], function(){
 Route::get('/admin/test3/{id?}', function () {
     return 'welcome ';
 })->middleware('auth');
+
+
+	Route::group(['prefix'=>LaravelLocalization::setLocale(), 
+		  'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+			 ], function(){
+			Route::group(['prefix'=>'DB'], function(){
+			Route::get('forms', 'SecondController\adminController@insertFromForm');
+			Route::get('db', 'SecondController\adminController@makeConnect');
+			Route::post('store', 'SecondController\adminController@saveData')->name('offers.sotre');
+			Route::get('showoffers', 'SecondController\adminController@getOffers');
+		});
+
+});
+

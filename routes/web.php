@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$name = 'katia ';
+	$data = [];
+	return view('welcome',compact('data'));
 });
 
 Route::get('/test1', function () {
@@ -103,7 +105,16 @@ Route::get('/comment1/{name?}', function(){
 		Route::get('/productDetail', 'customerController@getDetail');
 		Route::get('/productCompany', 'customerController@getCompany');
 		Route::get('/customer', 'customerController@getCustomer');
+		Route::get('/index', function(){
+			return view('Products.index');
+		});
+
 	});
 
-	//passing values 
-		//by with
+	Route::resource('/products', 'productController');
+
+	Route::group(['prefix'=> 'forms', 'namespace'=>'formController'], function(){
+		Route::get('input', 'inputController@showForm');
+		Route::post('process', 'inputController@processData')->name('forms.process');
+	});
+

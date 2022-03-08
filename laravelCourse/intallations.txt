@@ -10,3 +10,18 @@
 5. php artisan ui vue --auth   (for creting routes, login, register methods in controllers and default view in the project)
 
 6. npm install && npm run dev
+
+7. php artisan make:command scheduler_name  (for make laravel scheduler task)
+8. \App\console\commands\scheduler_name::class  (for calling inside commands list in Kernel file)
+9. php arisan schedule:run (for running task without waiting ti be)
+10. php artisan make:mail notify_mail
+11. composer dump-autoload
+
+12. php artisan make:model  (for creating new model )
+
+13.  return redirect()->back()->withErrors($valid)->withInputs($request->all());  for redirecting errors to the same page
+14. php artisan make:request OffeerRequest  (for make request file insetead of same controller file)
+
+15. php artisan config:clear (if cofig atts does not work)
+16. composer require mcamara/laravel-localization (for install mcamara package)
+

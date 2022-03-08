@@ -96,7 +96,13 @@
                 </div>
 
                 <div>
-                    
+                   
+                    @forelse($data as $_data)
+                        <p>{{$_data}}</p>
+                        @empty
+                        <p>empty data</p>
+                    @endforelse
+
                 </div>
             </div>
         </div>
