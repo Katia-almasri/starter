@@ -16,7 +16,6 @@ class notify_mail extends Mailable
      *
      * @return void
      */
-    $name;
     public function __construct($data)
     {
         //
